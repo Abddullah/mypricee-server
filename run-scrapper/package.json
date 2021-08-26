@@ -1,0 +1,29 @@
+{
+  "name": "microservice-demo",
+  "version": "1.0.0",
+  "description": "Learning microservices.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "develop": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --inspect server",
+    "loggs": "gcloud app logs tail -s default",
+    "deployNow": "cd ../ && git subtree push --prefix run-scrapper heroku master",
+    "logNow": "heroku logs --tail"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "internet-available": "^1.0.0",
+    "mongoose": "^5.9.28",
+    "morgan": "^1.10.0",
+    "node-cron": "^2.0.3",
+    "puppeteer": "^5.2.1"
+  }
+}

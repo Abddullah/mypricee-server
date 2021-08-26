@@ -1,0 +1,24 @@
+{
+  "name": "microservice-demo",
+  "version": "1.0.0",
+  "description": "Learning microservices.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "develop": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --inspect server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.28",
+    "morgan": "^1.10.0",
+    "puppeteer": "^5.2.1"
+  }
+}
